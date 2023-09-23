@@ -211,3 +211,36 @@ button:active{
     10% 20%, #4f1f0c 17.8%, #f1571a 100.2%);
     transition: 0.5s;
 }
+@media screen and (max-width: 480px) {
+html {
+    -webkit-text-size-adjust: none;
+ }
+ #top-menu a {
+    font-size: 90%;
+    padding: 10px 8px;
+ }
+}
+footer,header,nav,form,table{
+    display: block;
+}
+@media screen and (max-width: 650px) {
+    #header {
+       height: auto;
+    }
+    
+    #main-nav {
+       position: static;
+    }
+    #site-logo {
+       margin: 15px 100px 5px 0;
+       position: static;
+    }
+    
+    #content {
+       width: auto;
+       float: none;
+       margin: 20px 0;
+    }
+    
+ }
+ 

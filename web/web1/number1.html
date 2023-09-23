@@ -8,24 +8,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material-custom.min.css">
+    <link href="media-queries.css" rel="stylesheet" type="text/css">
   </head>
 <body>
   <div class="part1"></div>
 
-  <header>
-    <div class="logo">
+  <header id="header">
+    <div class="logo" id="site-logo">
       <img id="logo" src="logotip.jpg" />
     </div>
     <h1 class="text-white">Сайт Стырчак Елизаветы</h1>
-    <div class="top-menu">
+    <nav><div class="top-menu" id="main-nav">
       <ul>
         <li><a class="clickMenu" href="#links">Список гиперссылок</a></li>
         <li><a href="#table">Таблица</a></li>
         <li><a href="#form">Форма</a></li>
       </ul>
+    </nav>
     </div>
   </header>
-  <div class="inner">
+  <div class="inner" id="content">
   <p id="links">Список ссылок</p>
     <a href="http://www.kubsu.ru/">1)Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a>
     <p>
@@ -181,7 +183,7 @@
     </table>
     <p></p>
   </div>
-  <footer>
+  <footer id="footer">
     <p>© Стырчак Елизавета</p>
   </footer>
 </body>
