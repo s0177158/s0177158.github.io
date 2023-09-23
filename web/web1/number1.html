@@ -47,51 +47,52 @@
     <p><a href="../../index.html">12) Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></p>
     <p><a href="https://www.chitai-gorod.ru/product/prestuplenie-i-nakazanie-2968358?productShelf=Скоро%20в%20продаже&shelfIndex=5&productIndex=5">14) Ссылка на фрагмент страницы стороннего сайта</a></p>
     <p><img src="https://i.pinimg.com/564x/86/7c/f9/867cf93090090e877ee839ffa30a6b5f.jpg" alt="" style="width: 350px;" usemap="#Latte"></p>
-    <p><img src="https://i.pinimg.com/564x/65/d5/a9/65d5a9cdff6dcce0a271bd9e8fe05ebd.jpg" alt="" style="width: 350px;" margin="16" usemap="#Capucino">
-    <map name="Capucino"><area shape="rect" coords="17, 44, 1001, 564" alt="" href="https://okoffe.ru/ajs-kapuchino/"></map>
-    <map name="Latte"><area shape="circle" coords="419, 236, 354" alt="" href="https://coffexpert.ru/ays-latte/"></map></p>
+
+    <map name="Latte">
+      <area shape="rect" coords="0, 0, 120, 60" alt="" href="https://okoffe.ru/ajs-kapuchino/">
+    <area shape="circle" coords="419, 236, 354" alt="" href="https://coffexpert.ru/ays-latte/" ></map></p>
     <p><a href="" title="ссылка с пустым href">16) Ссылка с пустым href</a></p>  
     <p><a title="ссылка без href">17) Ссылка без href</a></p> 
     <p><a href="https://www.chitai-gorod.ru/bookwatch/" rel="nofollow"> 18) Ссылка, по которой запрещен переход поисковикам</a></p>
     <noindex><a href="https://www.chitai-gorod.ru/bookwatch/" rel="nofollow"> 19) Ссылка, по которой запрещенна индексация поисковиками</a></noindex>
     <p><strong>20) Навигация Читай-город</strong></p>
-        <ul><li><a href="https://www.chitai-gorod.ru" title="Заглавная 
-        страница">Заглавная страница</a></li>
-           <li><a href="https://www.chitai-gorod.ru" 
-        title="Подборки">Подборки</a></li>
-           <li><a href="https://www.chitai-gorod.ru/shops" title="Адреса магазинов">Адреса магазинов</a></li>
-           <li><a href="https://www.chitai-gorod.ru/sales" title="Распродажа">Распродажа</a></li>
-           <li><a href="https://www.chitai-gorod.ru/bonus-program" title="Бонусная программа">Бонусная программа</a></li></ul>
+    <ul><li><a href="https://www.chitai-gorod.ru" title="Заглавная 
+      страница">Заглавная страница</a></li>
+         <li><a href="https://www.chitai-gorod.ru" 
+      title="Подборки">Подборки</a></li>
+         <li><a href="https://www.chitai-gorod.ru/shops" title="Адреса магазинов">Адреса магазинов</a></li>
+         <li><a href="https://www.chitai-gorod.ru/sales" title="Распродажа">Распродажа</a></li>
+         <li><a href="https://www.chitai-gorod.ru/bonus-program" title="Бонусная программа">Бонусная программа</a></li></ul>
            <a href="ftp://gslism.net/gslism/lok.txt">21) FTP</a>
            <p id="form"></p>
            <form action="/" method="POST">
            <label>
-            Фамилия Имя Отчество (текстовое поле):<br />
+            <p>Фамилия Имя Отчество (текстовое поле):<br /></p>
             <input name="field-name-1"
-              value="ФИО" />
+              placeholder="ФИО" required/>
           </label><br />
     
           <label>
-            Телефон(поле tel):<br />
+            <p>Телефон(поле tel):<br /></p>
             <input name="field-tel"
               type="tel"
-              placeholder="Введите ваш номер телефона" />
+              placeholder="Введите ваш номер телефона" required/>
           </label><br />
           <label>
-            E-mail(поле email):<br />
+            <p>E-mail(поле email):<br /></p>
             <input name="field-email"
               type="email"
-              placeholder="Введите вашу почту" />
+              placeholder="Введите вашу почту" required/>
           </label><br />
           <label>
-            Дата рождения(поле даты):<br />
+            <p>Дата рождения(поле даты):<br /></p>
             <input name="field-date"
-              value="2004-09-24"
-              type="date" />
+              placeholder="2004-09-24"
+              type="date" required/>
           </label><br />
-          Выберите ваш пол:<br />
+          <p>Выберите ваш пол:<br /></p>
           <div class="icheck-material-orange">
-            <input type="radio" id="someRadioId1" name="someGroupName" />
+            <input type="radio" id="someRadioId1" name="someGroupName" required/>
             <label for="someRadioId1">Женский</label>
         </div>
         <div class="icheck-material-orange">
@@ -103,30 +104,30 @@
             Любимый язык программирования (listbox с множественным выбором):
             <br />
             <select name="field-name-4[]"
-              multiple="multiple">
+              multiple="multiple" required>
               <option value="Значение1">Pascal</option>
-              <option value="Значение2" selected="selected">C</option>
-              <option value="Значение3" selected="selected">C++</option>
-              <option value="Значение4" selected="selected">JavaScript</option>
-              <option value="Значение5" selected="selected">PHP</option>
-              <option value="Значение6" selected="selected">Python</option>
-              <option value="Значение7" selected="selected">Java</option>
-              <option value="Значение8" selected="selected">Haskel</option>
-              <option value="Значение9" selected="selected">Clojure</option>
-              <option value="Значение10" selected="selected">Prolog</option>
-              <option value="Значение11" selected="selected">Scala</option>
+              <option value="Значение2" >C</option>
+              <option value="Значение3">C++</option>
+              <option value="Значение4" >JavaScript</option>
+              <option value="Значение5" >PHP</option>
+              <option value="Значение6" >Python</option>
+              <option value="Значение7" >Java</option>
+              <option value="Значение8" >Haskel</option>
+              <option value="Значение9" >Clojure</option>
+              <option value="Значение10" >Prolog</option>
+              <option value="Значение11" >Scala</option>
             </select>
           </label><br />
           <label>
             Биография (многострочное текстовое поле):<br />
-            <textarea name="field-name-2">Напишите свою биографию</textarea>
+            <textarea name="field-name-2" placeholder="Напишите свою биографию" required></textarea>
           </label><br />
           С контрактом (чекбокс):<br />
           <div class="icheck-material-orange">
-            <input type="checkbox" id="someCheckboxId" />
+            <input type="checkbox" id="someCheckboxId" required/>
             <label for="someCheckboxId">Ознакомлен (а)</label>
         </div>
-        <input type="submit" value="Сохранить" />
+        <p><button type="submit" value="Сохранить">Сохранить</button></p>
     </form>
     <p>Таблица "Кофейные напитки"</p>
     <table id="table" class="iksweb">

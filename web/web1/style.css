@@ -13,6 +13,7 @@ header {
    padding-top:10px;
    
 }
+
 tr:nth-child(2n) {
     background: #f8cda9; /* Цвет фона */
    } 
@@ -25,7 +26,7 @@ footer {
     width: 1860px;
     background: #4f1f0c;
     color: white;
-    text-align: center;
+    text-align: left;
   }
 .inner {
     width: 350px;
@@ -160,4 +161,53 @@ h1{
     float: left;
     margin-left: 40px;
     height: 80px;
+}
+input{
+    width:300px;
+    height:45px;
+    border:none;
+    border-radius: 100px;
+    text-align: center;
+}
+form{
+    width: 500px;
+    height: 1000px;
+    border-radius: 2px;
+}
+textarea{
+    border-radius: 10px;
+}
+select{
+    border-radius: 10px;
+    width: 100px;
+}
+button{
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #edbf96;
+    transition: 0.1s;
+}
+button::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle
+    farthest-corner at 10% 20%, #4f1f0c 17.8%,#f1571a 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left:0;
+    top:0;
+}
+button:active{
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 
+    10% 20%, #4f1f0c 17.8%, #f1571a 100.2%);
+    transition: 0.5s;
 }
