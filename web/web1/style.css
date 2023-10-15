@@ -3,13 +3,18 @@
 }
 
 body {
+    
+    background-image: url(15eaf1a4b439a88466b0afdcf1dfd40b.jpg);
     margin: 0;
-    background-color:#edbf96;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .tg {
     display: flex;
     flex-direction: column-reverse;
+    margin: auto;
 }
 
 header {
@@ -79,7 +84,10 @@ li {
 .box ul {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 0px;
 }
 
 
@@ -165,15 +173,34 @@ tr:nth-child(1) {
     width: 100%;
 }
 
+.container1 {
+    background-color:#feb778;
+    padding: 20px;
+    margin: 50px auto;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+   }
+   label {
+    display: block;
+    margin-bottom: 10px;
+   }
+   input[type="number"], select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+   }
+   button.button1 {
+    padding: 10px;
+    background-color:#ffffff;
+    color:#4f1f0c;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #4f1f0c;
-    color: white;
-}
+
 
 
 
@@ -198,13 +225,41 @@ label {
 }
 
 form {
-    color: white;
+    order: -1;
     display: flex;
+    border-radius: 5px;
+    font-weight: normal;
+    border-collapse: collapse;
+    flex-flow: column wrap;
+    text-indent: inherit;
+    border-spacing: 2px;
+    color: rgb(255, 255, 255);
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 8px;
 }
+.row.g-3.needs-validation{
+    margin-top: 16px 8px 0px;
+    padding: 8px;
+}
+.form {
+    align-content: center;
+}
+
+form h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form label {
+    align-content: center;
+}
+
+.form p {
+    text-align: center;
+}
+
 
 input {
     width: 300px;
@@ -305,6 +360,7 @@ footer {
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+        background-color: #edbf96;
     }
 
     .tg {
@@ -532,6 +588,34 @@ header h1{
         color: #fff;
         /* Цвет текста */
     }
+
+
+    .container1 {
+        background-color:#feb778;
+        padding: 20px;
+        margin: 50px auto;
+        width: 400px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+       }
+       label {
+        display: block;
+        margin-bottom: 10px;
+       }
+       input[type="number"], select {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+       }
+       button.button1 {
+        padding: 10px;
+        background-color:#ffffff;
+        color:#4f1f0c;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+       }
 
 footer {
         display: flex;
