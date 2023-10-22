@@ -175,7 +175,7 @@ tr:nth-child(1) {
     
     padding: 8px;
     margin: 30px auto;
-    width: 400px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
    }
@@ -206,7 +206,30 @@ tr:nth-child(1) {
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
    }
-   
+   select{
+    width: 270px;
+    height: 40px;
+   }
+   input#onecomp{
+    width: 35px;
+    height: 30px;
+   }
+   input#twocomp{
+    width: 35px;
+    height: 30px;
+   }
+   input#acryl{
+    width: 20px;
+    height: 20px;
+   }
+   input#base{
+    width: 20px;
+    height: 20px;
+   }
+   input#powder{
+    width: 20px;
+    height: 20px;
+   }
 
 
 

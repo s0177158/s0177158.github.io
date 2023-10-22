@@ -206,7 +206,7 @@
       </div>
 
 
-      <form action="/" method="POST" id="form" class="row g-3 needs-validation">
+      <form action="/" method="POST" id="form" class="row g-3 needs-validation" novalidate>
         <h3 id="form"  >Форма</h3>
 
         <div class="col-auto">
@@ -242,18 +242,10 @@
         </div>
 
         <div class="col-auto">
-          <label for="validationCustomUsername" class="form-label"
-            >E-mail:
+          <label for="validationCustomUsername" class="form-label">E-mail:
           </label>
           <div class="input-group has-validation">
-            <input
-              type="text"
-              class="form-control rounded-pill"
-              placeholder="Введите ваш E-mail"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
-              required=""
-            />
+            <input type="text" class="form-control rounded-pill" placeholder="Введите ваш E-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
             <div class="invalid-feedback"></div>
           </div>
         </div>
