@@ -17,6 +17,7 @@
     />
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <script src="my.js"></script>
 </head>
 <body >
   <div class="tg">
@@ -331,13 +332,7 @@
         <div class="col-auto">
           С контрактом:
           <div class="form-check icheck-material-orange">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="invalidCheck"
-              required=""
-            />
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""/>
             <label class="form-check-label" for="invalidCheck">
               Ознакомлен (а)
             </label>
@@ -414,22 +409,60 @@
     
       <label for="product">Выберите товар:</label>
       <select id="product" name="product">
-       <option value="10">Товар 1 - 10 рублей</option>
-       <option value="20">Товар 2 - 20 рублей</option>
-       <option value="30">Товар 3 - 30 рублей</option>
+      <option value="10">Товар 1 - 10 рублей</option>
+      <option value="20">Товар 2 - 20 рублей</option>
+      <option value="30">Товар 3 - 30 рублей</option>
       </select><br><br>
     
       <button class="button1" onclick="calculate()">Подсчитать стоимость</button><br><br>
-     </div>
+    </div>
     
-     <script>
+    <script>
       function calculate() {
-       var quantity = document.getElementById("quantity").value;
-       var product = document.getElementById("product").value;
+      var quantity = document.getElementById("quantity").value;
+      var product = document.getElementById("product").value;
        var result = quantity * product;
-       alert("Стоимость заказа: " + result + " рублей");
+      alert("Стоимость заказа: " + result + " рублей");
       }
-     </script>
+    </script>
+    
+    <div class="container2 text-center">
+      <div class="row">
+        <p>Меню</p>
+        <div class="col" >
+          <p>Выберите напиток: </p>
+          <select name="product-choice"  onclick="change()">
+            <option value="1">Эспрессо</option>
+            <option value="2">Капучино</option>
+            <option value="3">Латте</option>
+          </select>
+        </div>
+        <p></p>
+        <br />
+        <div id="option-choices" ></div>
+        <div class="col">
+          <p>
+            Введите количество
+            <input
+              id="amount-of-products"
+              type="number"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </p>
+        </div>
+        <div class="col">
+          <br />
+          <input type="button" value="Рассчитать сумму заказа" onclick="getSum()" />
+          <div id="result"></div>
+          <script src="my.js"></script>
+        </div>
+      </div>
+    </div>
+
+    
+
     <footer>
       <div class="container text-center">
       <div class="footer-bg-sm"><p>© Стырчак Елизавета</p></div></div>

@@ -172,9 +172,9 @@ tr:nth-child(1) {
 }
 
 .container1 {
-    background-color:#feb778;
-    padding: 20px;
-    margin: 50px auto;
+    
+    padding: 8px;
+    margin: 30px auto;
     width: 400px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
@@ -198,7 +198,15 @@ tr:nth-child(1) {
     cursor: pointer;
    }
 
-
+   .container2 {
+    
+    padding: 8px;
+    margin: 30px auto;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+   }
+   
 
 
 
@@ -234,12 +242,11 @@ form {
     color: rgb(255, 255, 255);
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
-    padding: 8px;
+    align-items:start;
+    
 }
 .row.g-3.needs-validation{
-    margin-top: 16px 8px 0px;
-    padding: 8px;
+    align-items: start;
 }
 .form {
     align-content: center;
@@ -353,12 +360,12 @@ footer {
 
 @media screen and (min-width : 415px) {
     body {
-        /*background-image: url(kosmos.jpg);*/
-        margin: 0;
+    
+        background-image: url(15eaf1a4b439a88466b0afdcf1dfd40b.jpg);
+        margin: auto;
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
-        background-color: #edbf96;
     }
 
     .tg {
@@ -613,6 +620,40 @@ header h1{
         border: none;
         border-radius: 3px;
         cursor: pointer;
+       }
+
+       .container2{
+        background-color:#feb778;
+        padding: 20px;
+        margin: 50px auto;
+        width: 500px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        text-align: left;
+       }
+       select{
+        width: 150px;
+        height: 35px;
+       }
+       input#onecomp{
+        width: 35px;
+        height: 30px;
+       }
+       input#twocomp{
+        width: 35px;
+        height: 30px;
+       }
+       input#acryl{
+        width: 35px;
+        height: 30px;
+       }
+       input#base{
+        width: 35px;
+        height: 30px;
+       }
+       input#powder{
+        width: 35px;
+        height: 30px;
        }
 
 footer {
