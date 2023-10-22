@@ -54,7 +54,7 @@ function change() {
     let resultSum = sums[selectChoice - 1] + checkOptions(selectChoice);
   
     let amount = document.getElementById("amount-of-products").value;
-    if (amount.match(/^[0-9]$/))
+    if (amount.match(/^[0-5]$/))
         resultSum *= amount;
     else
         alert("Error");
