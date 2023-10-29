@@ -340,6 +340,18 @@ input#powder{
     width: 350px;
 }
 
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: space-around;
+    
+    background: #fdc065;
+    color: white;
+}
+
 @media screen and (min-width : 415px) {
     body {
         background-image: url(/web/web1/png/coffee-and-croissant-copy-space.jpg);
@@ -685,6 +697,18 @@ input#powder{
         width: 800px;
         padding: 50px;
         margin: 30px 450px ;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-content: space-around;
+        
+        background: #fdc065;
+        color: white;
     }
 
 }
