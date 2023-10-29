@@ -1,464 +1,337 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gslism</title>
+  <title>GslismCoffee</title>
+  <link rel="stylesheet" href="/web/web1/css/style.css"/>
+  <script src="/web/web1/js/my.js"></script>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material-custom.min.css"
-    />
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <script src="my.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-material@1.0.1/icheck-material-custom.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
-<body >
+<body>
   <div class="tg">
-    <header class="navbar navbar-expand-lg navbar-dark ">
+    <header class="navbar navbar-expand-lg">
       <div class="container text-center">
         <a class="navbar-brand" href="#">
-          <img src="logotip.jpg" alt="Логотип" width="60" height="60" class="d-inline-block align-top img-fluid">
-          </a><h1><strong><em>GSLISM</em></strong></h1>
-      
-      <nav class="navbar navbar-expand-lg bg-body-orange" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler active btn btn-outline-orange" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse"  id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#links">Список гиперссылок</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#form">Форма</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#table">Таблица</a>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
-      </div>
-      </header>
-      <div class="wrap lh-lg font-monospace">
-        <div class="box">
-          <ul class="list-unstyled-sm">
-            <li id="links">Список ссылок</li>
-            <li>
-              <a id="1" href="http://www.kubsu.ru/"
-                >1)Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
-              >
+          <img src="/web/web1/png/logotip.jpg" alt="Logotype" width="30" height="30" class="d-inline-block align-top img-fluid"></a>
+          <h1><strong><em>GslismCoffee</em></strong></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#links">Список гиперссылок</a>
             </li>
-            <li>
-              <a
-                href="https://www.kubsu.ru/"
-                title="Официальный сайт Кубанского государственного университета"
-                >2)КубГУ</a
-              >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#form">Форма</a>
             </li>
-            <li>
-              <a
-                href="https://www.istockphoto.com/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BA%D0%BE%D1%84%D0%B5-gm685135374-126064525"
-                ><img src="coffee.jpg" alt="Coffee" style="width: 350px"
-              /></a>
+            <li class="nav-item">
+              <a class="nav-link" href="#table">Таблица</a>
             </li>
-            <li>
-              <a href="/index.html"
-                >4)Сокращенная ссылка на внутреннюю страницу</a
-              >
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Калькуляторы
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#calculate1">Калькулятор 1</a></li>
+                <li><a class="dropdown-item" href="#calculate2">Калькулятор 2</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="/web/web1/">5)Сокращенная ссылка на главную страницу</a>
-            </li>
-            <li id="joke">Вернулись сюда</li>
-            <li>
-              <strong
-                ><a class="t"
-                  >6) – Надо произносить больше позитивных слов: счастье,
-                  радость, умиротворение. <br />
-                  – Умер от варенья???</a
-                ></strong
-              >
-            </li>
-            <li><a href="#joke">Вернуться назад</a></li>
-            <li>
-              <a href="https://ya.ru/?a=kubsu&b=kubsu&c=kubsu"
-                >7) Ссылка с тремя параметрами в URL</a
-              >
-            </li>
-            <li><a href="#joke">8) Ссылка с параметром id в URL</a></li>
-            <li>
-              <a href="./index.html"
-                >9) Относительная ссылка на страницу в текущем каталоге</a
-              >
-            </li>
-            <li>
-              <a href="./about/newform.html"
-                >10) Относительная ссылка на страницу в каталоге about</a
-              >
-            </li>
-            <li>
-              <a href="../web.html"
-                >11) Относительная ссылка на страницу в каталоге уровнем выше
-                текущего</a
-              >
-            </li>
-            <li>
-              <a href="../../index.html">12) Относительная ссылка на страницу в каталоге двумя уровнями
-                выше текущего</a>
-              
-            </li>
-            <li>
-              <a
-                href="https://www.chitai-gorod.ru/product/prestuplenie-i-nakazanie-2968358?productShelf=Скоро%20в%20продаже&shelfIndex=5&productIndex=5"
-                >14) Ссылка на фрагмент страницы стороннего сайта</a
-              >
-            </li>
-            <li><img
-              src="https://i.pinimg.com/564x/86/7c/f9/867cf93090090e877ee839ffa30a6b5f.jpg"
-              alt=""
-              style="width: 350px"
-              usemap="#Latte"
-            />
-            <map name="Latte">
-              <area
-                shape="rect"
-                coords="0, 0, 120, 60"
-                alt=""
-                href="https://okoffe.ru/ajs-kapuchino/" />
-              <area
-                shape="circle"
-                coords="419, 236, 354"
-                alt=""
-                href="https://coffexpert.ru/ays-latte/"
-            /></map></li>
-            <li>
-              <a href="" title="ссылка с пустым href"
-                >16) Ссылка с пустым href</a
-              >
-            </li>
-            <li><a title="ссылка без href">17) Ссылка без href</a></li>
-            <li>
-              <a href="https://www.chitai-gorod.ru/bookwatch/" rel="nofollow">
-                18) Ссылка, по которой запрещен переход поисковикам</a
-              >
-            </li>
-            <li>
-              <noindex
-                ><a
-                  href="https://www.chitai-gorod.ru/bookwatch/"
-                  rel="nofollow"
-                >
-                  19) Ссылка, по которой запрещенна индексация поисковиками</a
-                ></noindex
-              >
-            </li>
-            <li><strong>20) Навигация Читай-город</strong></li>
-            <ul>
-              <li>
-                <a
-                  href="https://www.chitai-gorod.ru"
-                  title="Заглавная 
-      страница"
-                  >Заглавная страница</a
-                >
-              </li>
-              <li>
-                <a href="https://www.chitai-gorod.ru" title="Подборки"
-                  >Подборки</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.chitai-gorod.ru/shops"
-                  title="Адреса магазинов"
-                  >Адреса магазинов</a
-                >
-              </li>
-              <li>
-                <a href="https://www.chitai-gorod.ru/sales" title="Распродажа"
-                  >Распродажа</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.chitai-gorod.ru/bonus-program"
-                  title="Бонусная программа"
-                  >Бонусная программа</a
-                >
-              </li>
-            </ul>
-            <li><a href="ftp://gslism.net/gslism/lok.txt">21) FTP</a></li>
           </ul>
         </div>
       </div>
+    </header>
+    <div class="wrap lh-lg font-monospace">
+        <ul class="list-unstyled-sm">
+          <li id="links"><strong><em>Список ссылок</em></strong></li>
+          <li><a href="http://www.kubsu.ru/">1)Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+          <li><a href="https://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">2)КубГУ</a></li>
+          <li><a href="https://www.istockphoto.com/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D0%BA%D0%BE%D1%84%D0%B5-gm685135374-126064525"><img src="/web/web1/png/coffee.jpg" alt="coffee" style="width: 200px;"/></a></li>
+          <li><a href="/index.html">4)Сокращенная ссылка на внутреннюю страницу</a></li>
+          <li><a href="/web/web1/">5)Сокращенная ссылка на главную страницу</a></li>
+          <li id="joke">Вернулись сюда</li>
+          <li><strong><a class="t">6) – Надо произносить больше позитивных слов: счастье, радость, умиротворение. 
+            <br />– Умер от варенья???</a></strong></li>
+          <li><a href="#joke">Вернуться назад</a></li>
+          <li><a href="https://ya.ru/?a=kubsu&b=kubsu&c=kubsu">7) Ссылка с тремя параметрами в URL</a></li>
+          <li><a href="#joke">8) Ссылка с параметром id в URL</a></li>
+          <li><a href="./index.html">9) Относительная ссылка на страницу в текущем каталоге</a></li>
+          <li><a href="./about/newform.html">10) Относительная ссылка на страницу в каталоге about</a></li>
+          <li><a href="../web.html">11) Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+          <li><a href="../../index.html">12) Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+          <li><a href="https://www.chitai-gorod.ru/product/prestuplenie-i-nakazanie-2968358?productShelf=Скоро%20в%20продаже&shelfIndex=5&productIndex=5">14) Ссылка на фрагмент страницы стороннего сайта</a></li>
+          <li><img src="https://i.pinimg.com/564x/86/7c/f9/867cf93090090e877ee839ffa30a6b5f.jpg" alt="" style="width: 200px" usemap="#Latte"/>
+          <map name="Latte">
+            <area shape="rect" coords="0, 0, 120, 60" alt="" href="https://okoffe.ru/ajs-kapuchino/" />
+            <area shape="circle" coords="419, 236, 354" alt="" href="https://coffexpert.ru/ays-latte/"/></map></li>
+          <li><a href="" title="ссылка с пустым href">16) Ссылка с пустым href</a></li>
+          <li><a title="ссылка без href">17) Ссылка без href</a></li>
+          <li><a href="https://www.chitai-gorod.ru/bookwatch/" rel="nofollow">18) Ссылка, по которой запрещен переход поисковикам</a></li>
+          <li><noindex><a href="https://www.chitai-gorod.ru/bookwatch/" rel="nofollow">19) Ссылка, по которой запрещенна индексация поисковиками</a></noindex></li>
+          <li><strong>20) Навигация Читай-город</strong></li>
+          <ul>
+            <li><a href="https://www.chitai-gorod.ru" title="Заглавная страница">Заглавная страница</a></li>
+            <li><a href="https://www.chitai-gorod.ru" title="Подборки">Подборки</a></li>
+            <li><a href="https://www.chitai-gorod.ru/shops" title="Адреса магазинов">Адреса магазинов</a></li>
+            <li><a href="https://www.chitai-gorod.ru/sales" title="Распродажа">Распродажа</a></li>
+            <li><a href="https://www.chitai-gorod.ru/bonus-program" title="Бонусная программа">Бонусная программа</a></li>
+          </ul>
+          <li><a href="ftp://gslism.net/gslism/lok.txt">21) FTP</a></li>
+        </ul>
+    </div>
+    <form action="/" method="POST" id="form" class="row g-3 needs-validation" validate>
+      <h3 id="form">Форма</h3>
+      <div class="col-auto">
+        <label for="validationCustom01" class="form-label">Фамилия Имя Отчество:</label>
+        <input type="text" placeholder="ФИО" class="form-control rounded-pill" id="validationCustom01" value="" required=""/>
+        <div class="valid-feedback">Отлично!</div>
+      </div>
 
-
-      <form action="/" method="POST" id="form" class="row g-3 needs-validation" novalidate>
-        <h3 id="form"  >Форма</h3>
-
-        <div class="col-auto">
-          <label for="validationCustom01" class="form-label"
-            >Фамилия Имя Отчество:</label
-          >
-          <input
-            type="text"
-            placeholder="ФИО"
-            class="form-control rounded-pill"
-            id="validationCustom01"
-            value=""
-            required=""
-          />
-          <div class="valid-feedback">Looks good!</div>
-        </div>
-
-        <div class="col-auto">
-          <label for="validationCustomUsername" class="form-label"
-            >Телефон:
-          </label>
-          <div class="input-group has-validation">
-            <input
-              type="text"
-              class="form-control rounded-pill"
-              placeholder="Введите ваш номер"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
-              required=""
-            />
-            <div class="invalid-feedback"></div>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <label for="validationCustomUsername" class="form-label">E-mail:
-          </label>
-          <div class="input-group has-validation">
-            <input type="text" class="form-control rounded-pill" placeholder="Введите ваш E-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
-            <div class="invalid-feedback"></div>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <label>
-            Дата рождения:<br />
-            <input
-              name="field-date"
-              class="form-control rounded-pill"
-              placeholder="2004-07-14"
-              type="date"
-              required=""
-            />
-          </label>
-        </div>
-
-        <div class="col-auto">
-          <p>Выберите ваш пол:<br /></p>
-          <div class="form-check icheck-material-orange">
-            <input
-              class="form-check-input"
-              type="radio"
-              id="someRadioId1"
-              name="someGroupName"
-              required=""
-            />
-            <label class="form-check-label" for="someRadioId1">Женский</label>
-          </div>
-          <div class="form-check icheck-material-orange">
-            <input
-              class="form-check-input"
-              type="radio"
-              id="someRadioId2"
-              name="someGroupName"
-            />
-            <label class="form-check-label" for="someRadioId2">Мужской</label>
-          </div>
-        </div>
-
-        <div class="col-auto">
-          <label for="validationCustom04" class="form-label"
-            >Любимый язык программирования</label
-          >
-          <select
-            class="form-select rounded-pill"
-            id="validationCustom04"
-            required=""
-          >
-            <option selected="" disabled="" value="">Выберете</option>
-            <option value="Значение1">Pascal</option>
-            <option value="Значение2">C</option>
-            <option value="Значение3">C++</option>
-            <option value="Значение4">JavaScript</option>
-            <option value="Значение5">PHP</option>
-            <option value="Значение6">Python</option>
-            <option value="Значение7">Java</option>
-            <option value="Значение8">Haskel</option>
-            <option value="Значение9">Clojure</option>
-            <option value="Значение10">Prolog</option>
-            <option value="Значение11">Scala</option>
-          </select>
+      <div class="col-auto">
+        <label for="validationCustomTelefone" class="form-label">Телефон:</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control rounded-pill" placeholder="Введите ваш номер" id="validationCustomTelefone" aria-describedby="inputGroupPrepend" required=""/>
           <div class="invalid-feedback"></div>
         </div>
-        <div class="col-auto">
-          <label>
-            Биография:<br />
-            <textarea
-              name="field-name-2"
-              class="form-control rounded-pill"
-              placeholder="Напишите свою биографию"
-              required=""
-            ></textarea>
-          </label>
-        </div>
-        <div class="col-auto">
-          С контрактом:
-          <div class="form-check icheck-material-orange">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""/>
-            <label class="form-check-label" for="invalidCheck">
-              Ознакомлен (а)
-            </label>
-            <div class="invalid-feedback"></div>
-          </div>
-        </div>
-        <div class="col-auto">
-          <button class="btn btn-primary " type="submit">Сохранить</button>
-        </div>
-      </form>
-        
-<div id="table" class="container mt-4">
-  <h2>Таблица "Кофейные напитки"</h2>
-      <table  class="table table-striped-sm">
-        
-        <tbody>
-          
-          <tr>
-            <td rowspan="2">Кофейная карта</td>
-            <td colspan="2">
-              % кофе к молоку/сливкам/воде
-            </td>
-            <td rowspan="2">Мин объем стакана/кружки кофе</td>
-            <td rowspan="2">Мин цена</td>
-          </tr>
-          <tr>
-            <td>Кофе</td>
-            <td>Молоко/Вода</td>
-          </tr>
-          <tr>
-            <td>Эспрессо</td>
-            <td>25%</td>
-            <td>Ничего</td>
-            <td>50мл</td>
-            <td>100-150р</td>
-          </tr>
-          <tr>
-            <td>Американо</td>
-            <td>25%</td>
-            <td>75% - вода</td>
-            <td>150мл</td>
-            <td>100-150р</td>
-          </tr>
-          <tr>
-            <td>Капучино</td>
-            <td>25%</td>
-            <td>50% - Взбитое молоко; 25% - Молоко</td>
-            <td>150 мл</td>
-            <td>150-200р</td>
-          </tr>
-          <tr>
-            <td>Латте</td>
-            <td>25%</td>
-            <td>25% - Взбитое молоко, 50% - Молоко</td>
-            <td>250мл</td>
-            <td>200-250р</td>
-          </tr>
-          <tr>
-            <td>Макиато</td>
-            <td>50%</td>
-            <td>25% - Взбитое молоко</td>
-            <td>350мл</td>
-            <td>250-300р</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-      <p></p>
-    </div>
-    <div class="container1" bg="#edbf96">
-      <label for="quantity">Количество товара:</label>
-      <input type="number" id="quantity" name="quantity"><br><br>
-    
-      <label for="product">Выберите товар:</label>
-      <select id="product" name="product">
-      <option value="10">Товар 1 - 10 рублей</option>
-      <option value="20">Товар 2 - 20 рублей</option>
-      <option value="30">Товар 3 - 30 рублей</option>
-      </select><br><br>
-    
-      <button class="button1" onclick="calculate()">Подсчитать стоимость</button><br><br>
-    </div>
-    
-    <script>
-      function calculate() {
-      var quantity = document.getElementById("quantity").value;
-      var product = document.getElementById("product").value;
-       var result = quantity * product;
-      alert("Стоимость заказа: " + result + " рублей");
-      }
-    </script>
-    
-    <div class="container2 text-center">
-      <div class="row">
-        <p>Меню</p>
-        <div class="col" >
-          <p>Выберите напиток: </p>
-          <select name="product-choice"  onclick="change()">
-            <option value="1">Эспрессо</option>
-            <option value="2">Капучино</option>
-            <option value="3">Латте</option>
-          </select>
-        </div>
-        <p></p>
-        <br />
-        <div id="option-choices" ></div>
-        <div class="col">
-          <p>
-            Введите количество
-            <input
-              id="amount-of-products"
-              type="number"
-              min="1"
-              max="5"
-              value="1"
-            />
-          </p>
-        </div>
-        <div class="col">
-          <br />
-          <input type="button" value="Рассчитать сумму заказа" onclick="getSum()" />
-          <div id="result"></div>
-          <script src="my.js"></script>
+      </div>
+
+      <div class="col-auto">
+        <label for="validationCustomUsername" class="form-label">E-mail:</label>
+        <div class="input-group has-validation">
+          <input type="text" class="form-control rounded-pill" placeholder="Введите ваш E-mail" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required=""/>
+          <div class="invalid-feedback"></div>
         </div>
       </div>
-    </div>
 
+      <div class="col-auto">
+        <label>Дата рождения:<br />
+          <input name="field-date" class="form-control rounded-pill" placeholder="2004-09-24" type="date" required=""/>
+        </label>
+      </div>
+
+      <div class="col-auto">
+        <p>Выберите ваш пол:<br /></p>
+        <div class="form-check icheck-material-orange">
+          <input class="form-check-input" type="radio" id="someRadioId1" name="someGroupName" required=""/>
+          <label class="form-check-label" for="someRadioId1">Женский</label>
+        </div>
+        <div class="form-check icheck-material-orange">
+          <input class="form-check-input" type="radio" id="someRadioId2" name="someGroupName"/>
+          <label class="form-check-label" for="someRadioId2">Мужской</label>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <label for="validationCustom04" class="form-label">Любимый язык программирования</label>
+        <select class="form-select rounded-pill" id="validationCustom04" required="">
+          <option selected="" disabled="" value="">Выберете</option>
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2">C</option>
+          <option value="Значение3">C++</option>
+          <option value="Значение4">JavaScript</option>
+          <option value="Значение5">PHP</option>
+          <option value="Значение6">Python</option>
+          <option value="Значение7">Java</option>
+          <option value="Значение8">Haskel</option>
+          <option value="Значение9">Clojure</option>
+          <option value="Значение10">Prolog</option>
+          <option value="Значение11">Scala</option>
+        </select>
+        <div class="invalid-feedback"></div>
+      </div>
+
+      <div class="col-auto">
+        <label>Биография:<br />
+          <textarea name="field-name-2" class="form-control rounded-pill" placeholder="Напишите свою биографию" required=""></textarea>
+        </label>
+      </div>
+
+      <div class="col-auto">С контрактом:
+        <div class="form-check icheck-material-orange">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required=""/>
+          <label class="form-check-label" for="invalidCheck">
+            Ознакомлен (а)
+          </label>
+          <div class="invalid-feedback"></div>
+        </div>
+      </div>
+
+      <div class="col-auto">
+        <button class="btn btn-primary " type="submit">Сохранить</button>
+      </div>
+    </form>
     
-
-    <footer>
-      <div class="container text-center">
-      <div class="footer-bg-sm"><p>© Стырчак Елизавета</p></div></div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <div id="table" class="container1 mt-4">
+      <h2 class="tab">Таблица "Кофейные напитки"</h2>
+          <table  class="table table-striped-sm">
+            <tbody>
+              <tr>
+                <td rowspan="2">Кофейная карта</td>
+                <td colspan="2">
+                % кофе к молоку/сливкам/воде
+                </td>
+                <td rowspan="2">Мин объем стакана/кружки кофе</td>
+                <td rowspan="2">Мин цена</td>
+              </tr>
+              <tr>
+                <td>Кофе</td>
+                <td>Молоко/Вода</td>
+              </tr>
+              <tr>
+                <td>Эспрессо</td>
+                <td>25%</td>
+                <td>Ничего</td>
+                <td>50мл</td>
+                <td>100-150р</td>
+              </tr>
+              <tr>
+                <td>Американо</td>
+                <td>25%</td>
+                <td>75% - вода</td>
+                <td>150мл</td>
+                <td>100-150р</td>
+              </tr>
+              <tr>
+                <td>Капучино</td>
+                <td>25%</td>
+                <td>50% - Взбитое молоко; 25% - Молоко</td>
+                <td>150 мл</td>
+                <td>150-200р</td>
+              </tr>
+              <tr>
+                <td>Латте</td>
+                <td>25%</td>
+                <td>25% - Взбитое молоко, 50% - Молоко</td>
+                <td>250мл</td>
+                <td>200-250р</td>
+              </tr>
+              <tr>
+                <td>Макиато</td>
+                <td>50%</td>
+                <td>25% - Взбитое молоко</td>
+                <td>350мл</td>
+                <td>250-300р</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+      <p></p>
+  </div>
+  <div class="container2" bg="#edbf96" id="calculate1">
+    <label for="quantity">Количество товара:</label>
+    <input type="number" id="quantity" name="quantity"><br><br>
+  
+    <label for="product">Выберите товар:</label>
+    <select id="product" name="product">
+    <option value="10">Товар 1 - 10 рублей</option>
+    <option value="20">Товар 2 - 20 рублей</option>
+    <option value="30">Товар 3 - 30 рублей</option>
+    </select><br><br>
+  
+    <button class="button1" onclick="calculate()">Подсчитать стоимость</button><br><br>
+  </div>
+  
+  <script>
+    function calculate() {
+    var quantity = document.getElementById("quantity").value;
+    var product = document.getElementById("product").value;
+     var result = quantity * product;
+    alert("Стоимость заказа: " + result + " рублей");
+    }
+  </script>
+  
+  <div class="container3 text-center" id="calculate2">
+    <div class="row">
+      <p>Меню</p>
+      <div class="col" >
+        <p>Выберите напиток: </p>
+        <select name="product-choice"  onclick="change()">
+          <option value="1">Эспрессо</option>
+          <option value="2">Капучино</option>
+          <option value="3">Латте</option>
+        </select>
+      </div>
+      <p></p>
+      <br />
+      <div id="option-choices" ></div>
+      <div class="col">
+        <p>
+          Введите количество:
+          <input id="amount-of-products" type="number" min="1" max="5" value="1"/>
+        </p>
+      </div>
+      <div class="col">
+        <br />
+        <input type="button" value="Рассчитать сумму заказа" onclick="getSum()" />
+        <div id="result"></div>
+        <script src="my.js"></script>
+      </div>
+    </div>
+  </div>
+  <div class="slider lazy" id="carouselExampleIndicators">
+    
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/1.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/2.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/4.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/3.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/5.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/6.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/7.jpg" />
+      </div>
+    </div>
+    <div>
+      <div class="image">
+        <img src="/web/web1/png/8.jpg" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<script src="/web/web1/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
