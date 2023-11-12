@@ -84,7 +84,7 @@ function change() {
 
   document.getElementById("openFormButton").addEventListener("click", function() {
     document.getElementById("popupForm").style.display = "block";
-    history.pushState({ formOpen: true }, '', '/s0177158.github.io');
+    history.pushState({ formOpen: true }, '', '/s0177158.github.io/web/web1/');
     
   });
   
@@ -110,5 +110,5 @@ message: '',
   });
   function closePopup() {
     document.getElementById("popupForm").style.display = "none";
-    window.location.href = "/web/web1/";
+    window.location.href = "/s0177158.github.io/web/web1/number1.html";
   }
