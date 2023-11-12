@@ -85,7 +85,7 @@ li::marker{
     color:#fd6913;
 }
 
-form {
+form#form.row.g-3.needs-validation {
     order: -1;
     display: flex;
     font-weight: normal;
@@ -340,6 +340,104 @@ input#powder{
     width: 350px;
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(248, 152, 97, 0.5);
+    z-index: 9999;
+    box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+}
+
+button#openFormButton {
+    background-color: #fa925e;
+    box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+    color: #ffffff;
+    border-radius: 10px;
+
+
+}
+
+button.loky {
+    background:#f54c09;
+    color:#ccc;
+    border-radius:10px;
+    box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+}
+
+button.lok {
+    background:#4f1f0c;
+    color:#ccc;
+    border-radius:10px;
+    box-shadow: 0px 0px 80px rgba(187, 112, 15, 0.986);
+}
+
+form#feedbackForm.feedback-form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    width: 420px;
+    height:900px;
+}
+
+.feedback-form {
+    position: absolute;
+    box-shadow: 0px 0px 40px rgba(252, 175, 74, 0.986);
+    align-content: stretch;
+    justify-content: space-evenly;
+    background: url(11.jpg);
+    color: #ff7b00;
+    background-color: #fdc7c7;
+}
+
+.feedback-form h5 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group input[type="checkbox"] {
+    display: inline;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.form-group input[type="submit"] {
+    background-color:#f1571a;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color:#fd5e02;
+}
+
 footer {
     display: flex;
     flex-wrap: nowrap;
@@ -445,7 +543,7 @@ footer {
         color:#fd6913;
     }
 
-    form {
+    form#form.row.g-3.needs-validation {
         order: -1;
         display: flex;
         font-weight: normal;
@@ -697,6 +795,112 @@ footer {
         width: 800px;
         padding: 50px;
         margin: 30px 450px ;
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(248, 152, 97, 0.5);
+        z-index: 9999;
+        box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+    }
+    
+    button#openFormButton {
+        background-color: #fa925e;
+        box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+        color: #ffffff;
+        border-radius: 10px;
+    
+    
+    }
+    
+    button.loky {
+        background:#f54c09;
+        color:#ccc;
+        border-radius:10px;
+        box-shadow: 0px 0px 80px rgba(252, 175, 74, 0.986);
+        width: 210px;
+        height: 50px;
+        border:1px solid #f54c09;
+    }
+    
+    button.lok {
+        background:#4f1f0c;
+        color:#ccc;
+        border-radius:10px;
+        box-shadow: 0px 0px 80px rgba(187, 112, 15, 0.986);
+        width: 210px;
+        height: 50px;
+        border:1px solid #4f1f0c;
+    }
+    
+    form#feedbackForm.feedback-form{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-between;
+        align-items: center;
+        width: 720px;
+        height:930px;
+        margin: 20px 610px;
+        padding:20px;
+    }
+    
+    .feedback-form {
+        position: absolute;
+        box-shadow: 0px 0px 40px rgba(252, 175, 74, 0.986);
+        align-content: stretch;
+        justify-content: space-evenly;
+        background: url(11.jpg);
+        color: #f7ad68;
+        background-color: #fdc7c7;
+    }
+    
+    .feedback-form h5 {
+        margin-top: 0;
+    }
+    
+    .form-group {
+        margin-bottom: 10px;
+    }
+    
+    .form-group label {
+        font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    .form-group input[type="checkbox"] {
+        display: inline;
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    
+    .form-group input[type="submit"] {
+        background-color:#f1571a;
+        color: white;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .form-group input[type="submit"]:hover {
+        background-color:#fd5e02;
     }
 
     footer {
